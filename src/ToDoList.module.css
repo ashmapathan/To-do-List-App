@@ -1,0 +1,162 @@
+.todoContainer {
+  width: 50%; /* Adjusts the width to 80% of the screen */
+  max-width: 500px; /* Prevents it from getting too large */
+  margin: 20px auto; /* Centers the app */
+  padding: 30px; /* Adds spacing inside */
+  background: #f8f9fa; /* Light background color */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .title{
+    color:#ac6bda;
+  }
+  
+  .input {
+    width: 40%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input::placeholder {
+    color: rgb(177, 169, 169);
+    transition: 0.3s;
+  }
+  
+  
+  .addButton {
+    background-color: #b37cda;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .addButton:hover {
+    background-color: #a34ae2;
+  }
+  
+  .taskList {
+    list-style-type: none;
+    padding: 0;
+    
+  }
+  
+  .taskItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    font-size: 16px;
+    background: white;
+    border-radius: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .homeButton{
+    color:white;
+    background-color: #b37cda;
+    padding: 8px 8px;
+    border: #b37cda;
+    border-radius: 4px;
+  }
+
+  .homeButton:hover{
+    background-color:#a34ae2;
+  }
+  .removeButton {
+    margin-left: auto;
+    background: none;
+    color: #b37cda;
+    padding: 5px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    border: solid 1px grey;
+  }
+  
+  .removeButton:hover {
+    background-color: violet;
+    
+  }
+
+  .editButton {
+    font-size: 15px;
+    padding: 3px 8px; /* Increase padding to match delete button */
+    border: solid 0.5px grey;
+    border-radius: 4px;
+    margin-right: 5px; /* Adds spacing before delete button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .editButton:hover{
+    background-color: violet;
+    border:solid 0.5px grey;
+  }
+
+  .buttonContainer {
+    display: flex;
+    align-items: center; /* Aligns buttons vertically */
+    gap: 5px; /* Space between edit and delete buttons */
+}
+
+  .circle {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #7d7d7d;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+  }
+  
+  .completedCircle {
+    background-color:  #b37cda; 
+    border: 2px solid #6a0dad !important;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: #b37cda;
+  }
+
+  .errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+  @media (max-width: 600px) {
+    .todoContainer {
+      width: 60%;
+    }
+    .input {
+      width:80% ;
+    }
+    .taskItem{
+        font-size: 12px;
+      
+    }
+  }
+  
+  @media (max-width: 820px) {
+    .taskItem{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .title{
+      font-size: 20px;
+    }
+  }
