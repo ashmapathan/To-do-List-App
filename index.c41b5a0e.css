@@ -1,0 +1,268 @@
+.BE8zQG_todoContainer {
+  background: #f8f9fa;
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  display: flex;
+  box-shadow: 0 5px 15px #0003;
+}
+
+.BE8zQG_title {
+  color: #ac6bda;
+}
+
+.BE8zQG_input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 40%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.BE8zQG_input::placeholder {
+  color: #b1a9a9;
+  transition: all .3s;
+}
+
+.BE8zQG_addButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #b37cda;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  padding: 8px 12px;
+}
+
+.BE8zQG_addButton:hover {
+  background-color: #a34ae2;
+}
+
+.BE8zQG_taskList {
+  padding: 0;
+  list-style-type: none;
+}
+
+.BE8zQG_taskItem {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+  padding: 8px;
+  font-size: 16px;
+  display: flex;
+}
+
+.BE8zQG_homeButton {
+  color: #fff;
+  background-color: #b37cda;
+  border: #b37cda;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.BE8zQG_homeButton:hover {
+  background-color: #a34ae2;
+}
+
+.BE8zQG_removeButton {
+  color: #b37cda;
+  cursor: pointer;
+  background: none;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-left: auto;
+  padding: 5px 8px;
+  text-decoration: none;
+}
+
+.BE8zQG_removeButton:hover {
+  background-color: violet;
+}
+
+.BE8zQG_editButton {
+  border: .5px solid gray;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  padding: 3px 8px;
+  font-size: 15px;
+  display: flex;
+}
+
+.BE8zQG_editButton:hover {
+  background-color: violet;
+  border: .5px solid gray;
+}
+
+.BE8zQG_buttonContainer {
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+.BE8zQG_circle {
+  border: 2px solid #7d7d7d;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.BE8zQG_completedCircle {
+  background-color: #b37cda;
+  border: 2px solid #6a0dad !important;
+}
+
+.BE8zQG_completed {
+  color: #b37cda;
+  text-decoration: line-through;
+}
+
+.BE8zQG_errorMessage {
+  color: red;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (width <= 600px) {
+  .BE8zQG_todoContainer {
+    width: 60%;
+  }
+
+  .BE8zQG_input {
+    width: 80%;
+  }
+
+  .BE8zQG_taskItem {
+    font-size: 12px;
+  }
+}
+
+@media (width <= 820px) {
+  .BE8zQG_taskItem {
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .BE8zQG_title {
+    font-size: 20px;
+  }
+}
+
+.gPMrEW_appContainer {
+  background: linear-gradient(to right, #f3f3f3, #d9e4f5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  padding: 20px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+
+.gPMrEW_homeContainer {
+  text-align: center;
+}
+
+.gPMrEW_welcomeTitle {
+  color: #494946;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.gPMrEW_plannerImage {
+  border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+  margin: 20px auto 40px;
+  transition: transform .3s ease-in-out;
+  display: block;
+  box-shadow: 0 4px 8px #0003;
+}
+
+.gPMrEW_plannerImage:hover {
+  transform: scale(1.05);
+}
+
+.gPMrEW_getStartedBtn {
+  color: #fff;
+  cursor: pointer;
+  background-color: violet;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  transition: background .3s ease-in-out, transform .2s ease-in-out;
+}
+
+.gPMrEW_getStartedBtn:hover {
+  background-color: #df64df;
+  transform: scale(1.05);
+}
+
+.gPMrEW_quotesSection {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.gPMrEW_quoteBox {
+  color: #444;
+  text-align: center;
+  background: #def199;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: transform .3s ease-in-out;
+  box-shadow: 2px 4px 8px #0000001a;
+}
+
+.gPMrEW_quoteBox:hover {
+  transform: translateY(-5px);
+}
+
+@media (width <= 600px) {
+  .gPMrEW_welcomeTitle {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+
+  .gPMrEW_plannerImage {
+    width: 200px;
+    transition: transform .3s ease-in-out;
+  }
+
+  .gPMrEW_plannerImage:active {
+    transform: scale(1.05);
+  }
+
+  .gPMrEW_getStartedBtn {
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 10px 18px;
+    font-size: 1rem;
+  }
+
+  .gPMrEW_quoteBox {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
